@@ -14,6 +14,6 @@ pkgs.writeShellApplication {
       echo "Warning: VMID ${erp1-settings.vmid} must be running during update. "
       exit 1
     fi
-    nixos-rebuild switch --flake .#erp1 --target-host ${erp1-settings.dnsName}
+    nixos-rebuild switch --flake .#erp1 --target-host root@${erp1-settings.dnsName}
   '';
 }

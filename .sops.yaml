@@ -3,9 +3,14 @@ creation_rules:
   - path_regex: ^hosts/erp1/secrets.yaml$
     key_groups:
       - age:
+        # erp1 host key
         - age1ahvuarjlhr2l2nkyzmwa3e007htchmwkafpvhtyjp97hcrqmsaaqt90d7q
+        # Dmytro's ssh keys on his various devices
         - age1wvcxwqg94nf7f2397zezfjlv3mqd52cutpsr82qspg5mmpshkdcsllelr8
         - age1de2asmvwfe9cu4d89egcwxfzwzuyrs0h9venryavnaz5yzhq8ukqan9xkc
         - age14kvv87x92rsuc966sq246q8xf3sxj3c526xneeg57dpgte6pduls97fg8c
         - age1zmemce4ravdj9dyt9h9nekzgym7qpf2jlhswjkwn4pcet8zskuxszgjvfq
         - age1yjrk6ykrtps68txcwlhfj8cqj5vzhk08xf3u737m45dqtgx28e8qggezxg
+stores:
+  yaml:
+    indent: 2
